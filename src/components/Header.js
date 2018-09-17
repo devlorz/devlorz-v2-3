@@ -23,7 +23,7 @@ const MenuItems = styled('div')`
   ${tw`text-sm lg:flex-grow`};
 `;
 
-const MenuItem = styled('a')`
+const MenuItem = styled('span')`
   ${tw`block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4`};
 `;
 

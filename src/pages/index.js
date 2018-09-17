@@ -6,9 +6,17 @@
 
 /* global tw */
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faMedium,
+  faTwitter,
+  faLinkedin
+} from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
+import profilePic from '../assets/profile.jpg';
 
 const Page = styled('div')`
   ${tw`flex justify-center items-center absolute pin`};
@@ -16,14 +24,6 @@ const Page = styled('div')`
 
 const Container = styled('div')`
   ${tw`bg-white container my-8 mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden font-sans`};
-`;
-
-const Wrapper = styled('div')`
-  ${tw`sm:flex sm:items-center px-6 py-4`};
-`;
-
-const Avatar = styled('img')`
-  ${tw`block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0`};
 `;
 
 const TextContainer = styled('div')`
@@ -46,10 +46,32 @@ const Button = styled('button')`
   ${tw`bg-white border-purple border font-semibold hover:bg-purple hover:text-white leading-normal px-4 py-1 rounded-full text-purple text-xs`};
 `;
 
+const Avatar = styled('img')`
+  ${tw`block h-48 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-0 sm:ml-0`};
+`;
+
+const Wrapper = styled('div')`
+  ${tw`flex flex-grow flex-col justify-center items-center`};
+`;
+
+const IconList = styled('div')`
+  ${tw`m-4`};
+`;
+
+const iconStyle = css`
+  margin: 5px 10px;
+`;
+
 export default () => (
   <Layout>
-    <Container>
-      <p>This is index</p>
-    </Container>
+    <Wrapper>
+      <Avatar src={profilePic} alt="Nutti Saelor" />
+      <IconList>
+        <FontAwesomeIcon className={iconStyle} icon={faGithub} size="2x" />
+        <FontAwesomeIcon className={iconStyle} icon={faMedium} size="2x" />
+        <FontAwesomeIcon className={iconStyle} icon={faTwitter} size="2x" />
+        <FontAwesomeIcon className={iconStyle} icon={faLinkedin} size="2x" />
+      </IconList>
+    </Wrapper>
   </Layout>
 );

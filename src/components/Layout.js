@@ -5,10 +5,20 @@ import styled from 'react-emotion';
 import Header from './Header';
 import Footer from './Footer';
 
+const PageLayout = styled('div')`
+  ${tw`h-nearly flex flex-col`};
+`;
+
+const Page = styled('div')`
+  ${tw`h-full flex flex-col flex-grow`};
+`;
+
 export default ({ children }) => (
-  <React.Fragment>
+  <PageLayout>
     <Header />
-    {children}
-    <Footer />
-  </React.Fragment>
+    <Page>
+      {children}
+      <Footer />
+    </Page>
+  </PageLayout>
 );
