@@ -95,16 +95,16 @@ export default () => (
         </Text>
       </TextWrap>
       <IconList>
-        <a href="https://github.com/devlorz">
+        <a href="https://github.com/devlorz" target="_blank">
           <FontAwesomeIcon className={iconStyle} icon={faGithub} size="2x" />
         </a>
-        <a href="https://medium.com/@leelorz6">
+        <a href="https://medium.com/@leelorz6" target="_blank">
           <FontAwesomeIcon className={iconStyle} icon={faMedium} size="2x" />
         </a>
-        <a href="https://twitter.com/JessHolicz">
+        <a href="https://twitter.com/JessHolicz" target="_blank">
           <FontAwesomeIcon className={iconStyle} icon={faTwitter} size="2x" />
         </a>
-        <a href="https://www.linkedin.com/in/nuttisaelor/">
+        <a href="https://www.linkedin.com/in/nuttisaelor/" target="_blank">
           <FontAwesomeIcon className={iconStyle} icon={faLinkedin} size="2x" />
         </a>
       </IconList>

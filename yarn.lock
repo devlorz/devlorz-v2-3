@@ -1325,6 +1325,13 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
 
+axios@^0.16.2:
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.2.tgz#ba4f92f17167dfbab40983785454b9ac149c3c6d"
+  dependencies:
+    follow-redirects "^1.2.3"
+    is-buffer "^1.1.5"
+
 axobject-query@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.0.1.tgz#05dfa705ada8ad9db993fa6896f22d395b0b0a07"
@@ -3904,7 +3911,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.2.3:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.8.tgz#1dbfe13e45ad969f813e86c00e5296f525c885a1"
   dependencies:
@@ -4080,6 +4087,13 @@ gatsby-react-router-scroll@^2.0.0-rc.2:
     "@babel/runtime" "^7.0.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
+
+gatsby-source-medium@^1.0.14:
+  version "1.0.14"
+  resolved "http://registry.npmjs.org/gatsby-source-medium/-/gatsby-source-medium-1.0.14.tgz#d8295075cc45883d16a5534abdf1d66f7303bb6b"
+  dependencies:
+    axios "^0.16.2"
+    babel-runtime "^6.26.0"
 
 gatsby@next:
   version "2.0.0-rc.21"
