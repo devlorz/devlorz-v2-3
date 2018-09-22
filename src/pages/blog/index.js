@@ -1,18 +1,42 @@
 /* global tw */
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTag,
+  faCalendarAlt,
+  faUser
+} from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../../components/Layout';
 
 const mediumURL = `https://medium.com/@leelorz6/`;
-const imageURL = `https://cdn-images-1.medium.com/max/750/`;
+const imageURL = `https://miro.medium.com/fit/c/1400/420/`;
 
-const Wrapper = styled('div')`
-  ${tw`font-sans`};
+const Article = styled('article')`
+  ${tw`font-sans container mx-auto p-4`};
+`;
+
+const Link = styled('a')`
+  ${tw`no-underline text-black`};
+`;
+
+const Blog = styled('div')`
+  ${tw`mb-10 max-w-md`};
+`;
+
+const Title = styled('h3')`
+  ${tw`text-2xl leading-tight mb-2`};
 `;
 
 const Image = styled('img')`
-  ${tw`block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0`};
+  ${tw`block w-full mx-auto mb-4 mb-0 mr-4 ml-0`};
+`;
+
+const iconStyle = css`
+  color: gray;
+  margin-left: 2px;
+  margin-right: 2px;
 `;
 
 export default ({
@@ -21,43 +45,47 @@ export default ({
   }
 }) => (
   <Layout>
-    <Wrapper>
+    <Article>
       {edges.map(({ node }) => {
         const title = node.title;
         const previewImage = node.virtuals.previewImage.imageId;
+        const image = previewImage ? (
+          <Image src={imageURL + previewImage} />
+        ) : (
+          ''
+        );
         return (
-          <a
-            target="_blank"
-            href={`${mediumURL}${node.id}`}
-            key={node.id}
-            style={{ color: '#000' }}
-          >
-            <div>
-              <h3
-                style={{
-                  marginBottom: '1rem'
-                }}
-              >
+          <Link target="_blank" href={`${mediumURL}${node.id}`} key={node.id}>
+            <Blog>
+              <Title>
                 {/* <Link style={{ boxShadow: 'none' }} to={node.fields.slug}> */}
                 {title}
                 {/* </Link> */}
-              </h3>
-              <img src={imageURL + previewImage} />
-              {/* <Image src={imageURL + previewImage} /> */}
+              </Title>
+              {/* <img src={imageURL + previewImage} /> */}
+              {image}
               <div />
               {node.virtuals.tags.map(({ name }) => {
-                return <small>#{name + ' '}</small>;
+                return (
+                  <small>
+                    <FontAwesomeIcon className={iconStyle} icon={faTag} />
+                    {' ' + name + ' '}
+                  </small>
+                );
               })}
               <br />
               <small>
-                {node.latestPublishedAt} by {node.author.name}
+                <FontAwesomeIcon className={iconStyle} icon={faCalendarAlt} />{' '}
+                {node.latestPublishedAt}{' '}
+                <FontAwesomeIcon className={iconStyle} icon={faUser} />{' '}
+                {node.author.name}
               </small>
               <p dangerouslySetInnerHTML={{ __html: node.virtuals.subtitle }} />
-            </div>
-          </a>
+            </Blog>
+          </Link>
         );
       })}
-    </Wrapper>
+    </Article>
   </Layout>
 );
 
