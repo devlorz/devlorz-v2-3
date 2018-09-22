@@ -5,6 +5,8 @@ import styled from 'react-emotion';
 import Header from './Header';
 import Footer from './Footer';
 
+import '../styles/global.css';
+
 const PageLayout = styled('div')`
   ${tw`h-nearly flex flex-col`};
 `;
