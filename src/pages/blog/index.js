@@ -30,7 +30,7 @@ const Title = styled('h3')`
 `;
 
 const Image = styled('img')`
-  ${tw`block w-full mx-auto mb-4 mb-0 mr-4 ml-0`};
+  ${tw`block w-full mx-auto mb-4 mb-2 mr-4 ml-0`};
 `;
 
 const iconStyle = css`
