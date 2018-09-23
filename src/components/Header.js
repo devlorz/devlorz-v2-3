@@ -24,7 +24,7 @@ const MenuItems = styled('div')`
 `;
 
 const MenuItem = styled('span')`
-  ${tw`block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4`};
+  ${tw`block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4`};
 `;
 
 const Hidden = styled('div')`
@@ -45,6 +45,14 @@ const linkStyle = css`
   color: inherit;
 `;
 
+const linkNormal = css`
+  color: #a0f0ed;
+`;
+
+const linkActive = css`
+  color: #fff;
+`;
+
 export default () => (
   <Nav>
     <Link className={linkStyle} to={'/'}>
@@ -62,13 +70,21 @@ export default () => (
     </Hidden>
     <Menu>
       <MenuItems>
-        <Link to={'/blog'}>
+        <Link to={'/blog'} className={linkNormal} activeClassName={linkActive}>
           <MenuItem>Blog</MenuItem>
         </Link>
-        <Link to={'/project'}>
+        <Link
+          to={'/project'}
+          className={linkNormal}
+          activeClassName={linkActive}
+        >
           <MenuItem>Project</MenuItem>
         </Link>
-        <Link to={'/resume'}>
+        <Link
+          to={'/resume'}
+          className={linkNormal}
+          activeClassName={linkActive}
+        >
           <MenuItem>Resume</MenuItem>
         </Link>
       </MenuItems>
