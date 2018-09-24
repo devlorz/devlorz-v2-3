@@ -16,7 +16,7 @@ const Name = styled('span')`
 `;
 
 const Menu = styled('div')`
-  ${tw`w-full block flex lg:flex lg:justify-end lg:items-center lg:w-auto`};
+  ${tw`w-full block flex justify-end items-center w-auto`};
 `;
 
 const MenuItems = styled('div')`
@@ -24,7 +24,7 @@ const MenuItems = styled('div')`
 `;
 
 const MenuItem = styled('span')`
-  ${tw`block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4`};
+  ${tw`block mt-4 inline-block mt-0 hover:text-white ml-4 lg:mr-4`};
 `;
 
 const Hidden = styled('div')`
@@ -60,14 +60,6 @@ export default () => (
         <Name>Nutti Saelor</Name>
       </Brand>
     </Link>
-    <Hidden>
-      <MenuButton>
-        <HomeButton viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </HomeButton>
-      </MenuButton>
-    </Hidden>
     <Menu>
       <MenuItems>
         <Link to={'/blog'} className={linkNormal} activeClassName={linkActive}>
