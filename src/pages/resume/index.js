@@ -1,11 +1,11 @@
 /* global tw */
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 
 import Layout from '../../components/Layout';
 
 const Container = styled('container')`
-  ${tw`font-sans container mx-auto mb-8`};
+  ${tw`font-sans container mx-auto mb-8 p-8`};
 `;
 
 const Header = styled('header')`
@@ -13,7 +13,7 @@ const Header = styled('header')`
 `;
 
 const NameSection = styled('div')`
-  ${tw`flex flex-col`};
+  ${tw`flex flex-col mb-2`};
 `;
 
 const Title = styled('h3')`
@@ -33,7 +33,7 @@ const Section = styled('section')`
 `;
 
 const SectionHeader = styled('div')`
-  ${tw`flex font-light`};
+  ${tw`flex flex-col md:flex-row font-light`};
 `;
 
 const SectionTitle = styled('div')`
@@ -66,6 +66,14 @@ const List = styled('ul')`
   ${tw`mt-0 mb-4 pl-6`};
 `;
 
+const visualSmall = css`
+  ${tw`md:hidden`};
+`;
+
+const visualLarge = css`
+  ${tw`hidden md:block`};
+`;
+
 export default () => (
   <Layout>
     <Container>
@@ -73,11 +81,21 @@ export default () => (
         <NameSection>
           <Title>Nutti Saelor</Title>
           <Link href="http://devlorz.github.io">devlorz.github.io</Link>
+          <Link className={visualSmall} ref="mailto:nuttisaelor@gmail.com">
+            nuttisaelor@gmail.com
+          </Link>
+          <Link className={visualSmall} href="https://github.com/devlorz">
+            github.com/devlorz
+          </Link>
         </NameSection>
         <div className="spacer" />
         <PersonalInfo>
-          <Link href="mailto:nuttisaelor@gmail.com">nuttisaelor@gmail.com</Link>
-          <Link href="https://github.com/devlorz">github.com/devlorz</Link>
+          <Link className={visualLarge} ref="mailto:nuttisaelor@gmail.com">
+            nuttisaelor@gmail.com
+          </Link>
+          <Link className={visualLarge} href="https://github.com/devlorz">
+            github.com/devlorz
+          </Link>
         </PersonalInfo>
       </Header>
 

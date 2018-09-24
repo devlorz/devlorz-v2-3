@@ -14,7 +14,7 @@ const mediumURL = `https://medium.com/@leelorz6/`;
 const imageURL = `https://miro.medium.com/fit/c/1400/420/`;
 
 const Article = styled('article')`
-  ${tw`font-sans container mx-auto p-4`};
+  ${tw`font-sans container mx-auto p-8`};
 `;
 
 const Link = styled('a')`
