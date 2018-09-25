@@ -8,7 +8,7 @@ import Footer from './Footer';
 import '../styles/global.css';
 
 const PageLayout = styled('div')`
-  ${tw`h-nearly flex flex-col`};
+  ${tw`h-screen flex flex-col`};
 `;
 
 const Page = styled('div')`
