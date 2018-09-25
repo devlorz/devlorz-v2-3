@@ -62,7 +62,11 @@ export default () => (
     </Link>
     <Menu>
       <MenuItems>
-        <Link to={'/blog'} className={linkNormal} activeClassName={linkActive}>
+        <Link
+          to={'/article'}
+          className={linkNormal}
+          activeClassName={linkActive}
+        >
           <MenuItem>Articles</MenuItem>
         </Link>
         <Link
