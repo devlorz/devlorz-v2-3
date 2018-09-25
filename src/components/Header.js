@@ -63,14 +63,14 @@ export default () => (
     <Menu>
       <MenuItems>
         <Link to={'/blog'} className={linkNormal} activeClassName={linkActive}>
-          <MenuItem>Blog</MenuItem>
+          <MenuItem>Articles</MenuItem>
         </Link>
         <Link
           to={'/project'}
           className={linkNormal}
           activeClassName={linkActive}
         >
-          <MenuItem>Project</MenuItem>
+          <MenuItem>Projects</MenuItem>
         </Link>
         <Link
           to={'/resume'}

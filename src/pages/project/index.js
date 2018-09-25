@@ -4,18 +4,7 @@ import styled from 'react-emotion';
 
 import Layout from '../../components/Layout';
 import moneySimpleIcon from '../../assets/money_simple_icon.png';
-
-const Container = styled('container')`
-  ${tw`font-sans container mx-auto mb-8 p-8`};
-`;
-
-const PageHeader = styled('div')`
-  ${tw`mx-4 my-8 text-center text-grey-darkest`};
-`;
-
-const PageHeaderTitle = styled('h2')`
-  ${tw`mb-4 text-4xl leading-tight mt-0 font-medium`};
-`;
+import { Container, PageHeader, PageHeaderTitle } from '../../components/Style';
 
 const ProjectCard = styled('div')`
   ${tw`flex flex-col items-center mt-0 mx-5p mb-10p md:flex-row md:mx-15p md:mb-5p`};

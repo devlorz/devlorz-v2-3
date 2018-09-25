@@ -3,10 +3,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 
 import Layout from '../../components/Layout';
-
-const Container = styled('container')`
-  ${tw`font-sans container mx-auto mb-8 p-8`};
-`;
+import { Container } from '../../components/Style';
 
 const Header = styled('header')`
   ${tw`flex`};
