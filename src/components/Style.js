@@ -1,7 +1,7 @@
 /* global tw */
 import styled from 'react-emotion';
 
-export const Container = styled('container')`
+export const Container = styled('div')`
   ${tw`font-sans container mx-auto mb-8 p-8`};
 `;
 

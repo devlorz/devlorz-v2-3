@@ -7,16 +7,17 @@
 /* global tw */
 import React from 'react';
 import styled, { css } from 'react-emotion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faMedium,
   faTwitter,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout';
 import profilePic from '../assets/profile.jpg';
+import MainIcon from '../components/MainIcon';
 
 const Avatar = styled('img')`
   ${tw`block h-48 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-0 sm:ml-0`};
@@ -31,7 +32,7 @@ const IconList = styled('div')`
 `;
 
 const TextWrap = styled('div')`
-  ${tw`mt-5 text-center`};
+  ${tw`mt-5 text-center text-grey-darkest`};
 `;
 
 const Text = styled('p')`
@@ -40,11 +41,6 @@ const Text = styled('p')`
 
 const textStyle = css`
   text-decoration: none;
-  color: black;
-`;
-
-const iconStyle = css`
-  margin: 5px 10px;
   color: black;
 `;
 
@@ -68,34 +64,17 @@ export default () => (
         </Text>
       </TextWrap>
       <IconList>
-        <a
-          href="https://github.com/devlorz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon className={iconStyle} icon={faGithub} size="2x" />
-        </a>
-        <a
-          href="https://medium.com/@leelorz6"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon className={iconStyle} icon={faMedium} size="2x" />
-        </a>
-        <a
-          href="https://twitter.com/JessHolicz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon className={iconStyle} icon={faTwitter} size="2x" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/nuttisaelor/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon className={iconStyle} icon={faLinkedin} size="2x" />
-        </a>
+        <MainIcon link={'https://github.com/devlorz'} icon={faGithub} />
+        <MainIcon link={'https://medium.com/@leelorz6'} icon={faMedium} />
+        <MainIcon link={'https://twitter.com/JessHolicz'} icon={faTwitter} />
+        <MainIcon
+          link={'https://www.linkedin.com/in/nuttisaelor/'}
+          icon={faLinkedin}
+        />
+        <MainIcon
+          link={'mailto:nuttisaelor@gmail.com'}
+          icon={faEnvelopeSquare}
+        />
       </IconList>
     </Wrapper>
   </Layout>

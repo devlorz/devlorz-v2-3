@@ -103,7 +103,31 @@ export default () => (
               <div>Bangkok, Thailand</div>
             </HeaderLeft>
             <HeaderRight>
-              <SubSectionInfo>January 2016 - Present</SubSectionInfo>
+              <SubSectionInfo>January 2017 - Present</SubSectionInfo>
+            </HeaderRight>
+          </SectionHeader>
+          <div>
+            <div className="job-title">Front End Team Lead</div>
+            <List>
+              <li>
+                Coordinate with Japanese developers and Thai developers for
+                smooth workflow
+              </li>
+              <li>
+                Built new web application projects called Extreme Cloud that
+                implemented by Angular
+              </li>
+            </List>
+          </div>
+        </SubSection>
+        <SubSection>
+          <SectionHeader>
+            <HeaderLeft>
+              <SubSectionTitle>Vertice International</SubSectionTitle>
+              <div>Bangkok, Thailand</div>
+            </HeaderLeft>
+            <HeaderRight>
+              <SubSectionInfo>January 2016 - December 2016</SubSectionInfo>
             </HeaderRight>
           </SectionHeader>
           <div>
@@ -116,10 +140,6 @@ export default () => (
               <li>
                 Worked with VB.NET to build Windows application called Extreme
                 (Car Management System)
-              </li>
-              <li>
-                Built new web application project called Extreme Cloud that
-                implemented by Angular
               </li>
             </List>
           </div>
@@ -250,10 +270,10 @@ export default () => (
         <SubSection>
           <List>
             <li>
-              Java, Kotlin, JUnit, Mockito, Robolectric, Dagger, RxJava,
-              RxAndroid, Retrofit, Glide, Crashlytics, Firebase
+              TypeScript, JavaScript(ES6), Angular, React, RxJS, NGRX, Redux,
+              Git
             </li>
-            <li>JavaScript, TypeScript, Angular, React, ES6, Git</li>
+            <li>Java, Kotlin, C#, VB.net, Android, Firebase</li>
           </List>
         </SubSection>
       </Section>
