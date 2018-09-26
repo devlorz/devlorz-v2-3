@@ -18,34 +18,6 @@ import {
 import Layout from '../components/Layout';
 import profilePic from '../assets/profile.jpg';
 
-const Page = styled('div')`
-  ${tw`flex justify-center items-center absolute pin`};
-`;
-
-const Container = styled('div')`
-  ${tw`bg-white container my-8 mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden font-sans`};
-`;
-
-const TextContainer = styled('div')`
-  ${tw`text-center sm:text-left sm:flex-grow`};
-`;
-
-const TextSpacing = styled('div')`
-  ${tw`mb-4`};
-`;
-
-const Company = styled('p')`
-  ${tw`my-0 text-sm leading-tight text-grey-dark`};
-`;
-
-// const Name = styled('h1')`
-//   ${tw`my-0 text-xl leading-tight`};
-// `;
-
-const Button = styled('button')`
-  ${tw`bg-white border-purple border font-semibold hover:bg-purple hover:text-white leading-normal px-4 py-1 rounded-full text-purple text-xs`};
-`;
-
 const Avatar = styled('img')`
   ${tw`block h-48 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-0 sm:ml-0`};
 `;
@@ -88,6 +60,7 @@ export default () => (
           <a
             href="https://www.facebook.com/devnoteio/"
             target="_blank"
+            rel="noopener noreferrer"
             className={textStyle}
           >
             DevNote 📓.
@@ -95,16 +68,32 @@ export default () => (
         </Text>
       </TextWrap>
       <IconList>
-        <a href="https://github.com/devlorz" target="_blank">
+        <a
+          href="https://github.com/devlorz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon className={iconStyle} icon={faGithub} size="2x" />
         </a>
-        <a href="https://medium.com/@leelorz6" target="_blank">
+        <a
+          href="https://medium.com/@leelorz6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon className={iconStyle} icon={faMedium} size="2x" />
         </a>
-        <a href="https://twitter.com/JessHolicz" target="_blank">
+        <a
+          href="https://twitter.com/JessHolicz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon className={iconStyle} icon={faTwitter} size="2x" />
         </a>
-        <a href="https://www.linkedin.com/in/nuttisaelor/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/nuttisaelor/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon className={iconStyle} icon={faLinkedin} size="2x" />
         </a>
       </IconList>

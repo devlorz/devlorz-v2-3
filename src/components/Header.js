@@ -27,18 +27,6 @@ const MenuItem = styled('span')`
   ${tw`block mt-4 inline-block mt-0 hover:text-white ml-4 lg:mr-4`};
 `;
 
-const Hidden = styled('div')`
-  ${tw`block lg:hidden`};
-`;
-
-const MenuButton = styled('button')`
-  ${tw`flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white`};
-`;
-
-const HomeButton = styled('svg')`
-  ${tw`fill-current h-3 w-3`};
-`;
-
 const linkStyle = css`
   box-shadow: none;
   text-decoration: none;

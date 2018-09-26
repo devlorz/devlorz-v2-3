@@ -55,10 +55,6 @@ const SubSectionInfo = styled('div')`
 
 const HeaderRight = styled('div')``;
 
-const JobTitle = styled('div')`
-  ${tw`text-grey-darker`};
-`;
-
 const List = styled('ul')`
   ${tw`mt-0 mb-4 pl-6`};
 `;
