@@ -11,11 +11,11 @@ const ProjectCardImg = styled('div')`
 `;
 
 const ProjectCardMain = styled('div')`
-  ${tw`flex flex-col justify-center items-center pl-0 md:items-start md:pl-12`};
+  ${tw`flex flex-col justify-center items-center pl-0 md:items-start md:pl-12 md:w-3/5`};
 `;
 
 const ProjectTitle = styled('span')`
-  ${tw`text-2xl text-teal`};
+  ${tw`text-2xl text-teal font-medium`};
 `;
 
 const ProjectDescription = styled('p')`
@@ -26,10 +26,12 @@ const ProjectCardFooter = styled('p')`
   ${tw`flex justify-end w-full`};
 `;
 
-export default ({ img, title, desc }) => (
+export default ({ img, title, desc, link }) => (
   <ProjectCard>
     <ProjectCardImg>
-      <img src={img} alt={title} />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img src={img} alt={title} />
+      </a>
     </ProjectCardImg>
     <ProjectCardMain>
       <ProjectTitle>{title}</ProjectTitle>
