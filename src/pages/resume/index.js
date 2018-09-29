@@ -3,20 +3,25 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 
 import Layout from '../../components/Layout';
-import { Container } from '../../components/Style';
+import { Container, Avatar } from '../../components/Style';
 import SectionCom from '../../components/Section';
 import { sections } from '../../data/sections';
+import profilePic from '../../assets/profile.jpg';
 
 const Header = styled('header')`
-  ${tw`flex`};
+  ${tw`flex flex-col md:flex-row mb-2 md:mb-4`};
 `;
 
-const NameSection = styled('div')`
-  ${tw`flex flex-col mb-2`};
+const PicSection = styled('div')`
+  ${tw`mx-auto mb-2`};
 `;
 
 const Title = styled('h3')`
-  ${tw`mb-0 text-4xl leading-tight font-medium text-teal`};
+  ${tw`mt-2 mb-0 text-5xl leading-tight font-medium text-teal`};
+`;
+
+const SubTitle = styled('h4')`
+  ${tw`my-0 text-2xl font-medium text-grey-darker`};
 `;
 
 const Link = styled('a')`
@@ -24,33 +29,38 @@ const Link = styled('a')`
 `;
 
 const PersonalInfo = styled('div')`
-  ${tw`flex flex-col flex-1 justify-end items-end`};
+  ${tw`flex flex-col flex-1 mb-2 md:items-end md:justify-center`};
 `;
 
-const visualSmall = css`
-  ${tw`md:hidden`};
-`;
+// const visualSmall = css`
+//   ${tw`md:hidden`};
+// `;
 
 const visualLarge = css`
-  ${tw`hidden md:block`};
+  /* ${tw`hidden md:block`}; */
 `;
 
 export default () => (
   <Layout>
     <Container>
       <Header>
-        <NameSection>
-          <Title>Nutti Saelor</Title>
+        <PicSection>
+          {/* <Title>Nutti Saelor</Title>
           <Link href="http://devlorz.github.io">devlorz.github.io</Link>
           <Link className={visualSmall} href="mailto:nuttisaelor@gmail.com">
             nuttisaelor@gmail.com
           </Link>
           <Link className={visualSmall} href="https://github.com/devlorz">
             github.com/devlorz
-          </Link>
-        </NameSection>
-        <div className="spacer" />
+          </Link> */}
+          <Avatar src={profilePic} alt="Nutti Saelor" />
+        </PicSection>
         <PersonalInfo>
+          <Title className={visualLarge}>Nutti Saelor</Title>
+          <SubTitle>Frontend Developer</SubTitle>
+          <Link href="http://devlorz.github.io" className={visualLarge}>
+            devlorz.github.io
+          </Link>
           <Link className={visualLarge} href="mailto:nuttisaelor@gmail.com">
             nuttisaelor@gmail.com
           </Link>
