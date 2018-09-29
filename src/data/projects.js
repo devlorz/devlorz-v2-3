@@ -1,8 +1,8 @@
-import moneySimpleIcon from '../../assets/money_simple_icon.png';
-import carChannelIcon from '../../assets/carchannel.png';
-import carBellIcon from '../../assets/carbell.png';
-import carstamateIcon from '../../assets/carstamate.jpg';
-import ngPokedexIcon from '../../assets/ng-pokedex.png';
+import moneySimpleIcon from '../assets/money_simple_icon.png';
+import carChannelIcon from '../assets/carchannel.png';
+import carBellIcon from '../assets/carbell.png';
+import carstamateIcon from '../assets/carstamate.jpg';
+import ngPokedexIcon from '../assets/ng-pokedex.png';
 
 export const projects = [
   {

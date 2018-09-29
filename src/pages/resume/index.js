@@ -5,7 +5,7 @@ import styled, { css } from 'react-emotion';
 import Layout from '../../components/Layout';
 import { Container } from '../../components/Style';
 import SectionCom from '../../components/Section';
-import { sections } from './section';
+import { sections } from '../../data/sections';
 
 const Header = styled('header')`
   ${tw`flex`};
@@ -42,7 +42,7 @@ export default () => (
         <NameSection>
           <Title>Nutti Saelor</Title>
           <Link href="http://devlorz.github.io">devlorz.github.io</Link>
-          <Link className={visualSmall} ref="mailto:nuttisaelor@gmail.com">
+          <Link className={visualSmall} href="mailto:nuttisaelor@gmail.com">
             nuttisaelor@gmail.com
           </Link>
           <Link className={visualSmall} href="https://github.com/devlorz">
@@ -51,7 +51,7 @@ export default () => (
         </NameSection>
         <div className="spacer" />
         <PersonalInfo>
-          <Link className={visualLarge} ref="mailto:nuttisaelor@gmail.com">
+          <Link className={visualLarge} href="mailto:nuttisaelor@gmail.com">
             nuttisaelor@gmail.com
           </Link>
           <Link className={visualLarge} href="https://github.com/devlorz">
