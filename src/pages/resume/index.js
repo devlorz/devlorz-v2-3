@@ -6,7 +6,7 @@ import Layout from '../../components/Layout';
 import { Container, Avatar } from '../../components/Style';
 import SectionCom from '../../components/Section';
 import { sections } from '../../data/sections';
-import profilePic from '../../assets/profile.jpg';
+import profilePic from '../../assets/profile_resume.jpg';
 
 const Header = styled('header')`
   ${tw`flex flex-col md:flex-row mb-2 md:mb-4`};
@@ -37,28 +37,14 @@ export default () => (
     <Container>
       <Header>
         <PicSection>
-          {/* <Title>Nutti Saelor</Title>
-          <Link href="http://devlorz.github.io">devlorz.github.io</Link>
-          <Link className={visualSmall} href="mailto:nuttisaelor@gmail.com">
-            nuttisaelor@gmail.com
-          </Link>
-          <Link className={visualSmall} href="https://github.com/devlorz">
-            github.com/devlorz
-          </Link> */}
           <Avatar src={profilePic} alt="Nutti Saelor" />
         </PicSection>
         <PersonalInfo>
           <Title>Nutti Saelor</Title>
           <SubTitle>Frontend Developer</SubTitle>
-          <Link href="http://devlorz.github.io">
-            devlorz.github.io
-          </Link>
-          <Link href="mailto:nuttisaelor@gmail.com">
-            nuttisaelor@gmail.com
-          </Link>
-          <Link href="https://github.com/devlorz">
-            github.com/devlorz
-          </Link>
+          <Link href="http://devlorz.github.io">devlorz.github.io</Link>
+          <Link href="mailto:nuttisaelor@gmail.com">nuttisaelor@gmail.com</Link>
+          <Link href="https://github.com/devlorz">github.com/devlorz</Link>
         </PersonalInfo>
       </Header>
 

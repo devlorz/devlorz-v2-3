@@ -18,10 +18,7 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import profilePic from '../assets/profile.jpg';
 import MainIcon from '../components/MainIcon';
-
-const Avatar = styled('img')`
-  ${tw`block h-48 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-0 sm:ml-0`};
-`;
+import { Avatar } from '../components/Style';
 
 const Wrapper = styled('div')`
   ${tw`flex flex-grow flex-col justify-center items-center font-sans`};
