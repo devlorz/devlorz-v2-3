@@ -32,14 +32,6 @@ const PersonalInfo = styled('div')`
   ${tw`flex flex-col flex-1 mb-2 md:items-end md:justify-center`};
 `;
 
-// const visualSmall = css`
-//   ${tw`md:hidden`};
-// `;
-
-const visualLarge = css`
-  /* ${tw`hidden md:block`}; */
-`;
-
 export default () => (
   <Layout>
     <Container>
@@ -56,15 +48,15 @@ export default () => (
           <Avatar src={profilePic} alt="Nutti Saelor" />
         </PicSection>
         <PersonalInfo>
-          <Title className={visualLarge}>Nutti Saelor</Title>
+          <Title>Nutti Saelor</Title>
           <SubTitle>Frontend Developer</SubTitle>
-          <Link href="http://devlorz.github.io" className={visualLarge}>
+          <Link href="http://devlorz.github.io">
             devlorz.github.io
           </Link>
-          <Link className={visualLarge} href="mailto:nuttisaelor@gmail.com">
+          <Link href="mailto:nuttisaelor@gmail.com">
             nuttisaelor@gmail.com
           </Link>
-          <Link className={visualLarge} href="https://github.com/devlorz">
+          <Link href="https://github.com/devlorz">
             github.com/devlorz
           </Link>
         </PersonalInfo>
