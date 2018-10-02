@@ -4,15 +4,15 @@ import styled, { css } from 'react-emotion';
 import { Link } from 'gatsby';
 
 const Nav = styled('nav')`
-  ${tw`flex font-sans items-center justify-between flex-wrap bg-teal p-6`};
+  ${tw`flex font-sans items-center justify-between flex-wrap bg-teal p-5 md:p-6`};
 `;
 
 const Brand = styled('div')`
-  ${tw`flex items-center flex-no-shrink text-white mr-6`};
+  ${tw`flex items-center flex-no-shrink text-white`};
 `;
 
 const Name = styled('span')`
-  ${tw`font-semibold text-xl tracking-tight`};
+  ${tw`font-semibold text-xl`};
 `;
 
 const Menu = styled('div')`
@@ -24,7 +24,7 @@ const MenuItems = styled('div')`
 `;
 
 const MenuItem = styled('span')`
-  ${tw`block mt-4 inline-block mt-0 hover:text-white ml-4 lg:mr-4`};
+  ${tw`block mt-4 inline-block mt-0 hover:text-white ml-2 md:ml-4 lg:mr-4`};
 `;
 
 const linkStyle = css`
