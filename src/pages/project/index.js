@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import { Container, PageHeader, PageHeaderTitle } from '../../components/Style';
 import ProjectCard from '../../components/ProjectCard';
 
-import { projects } from '../../data/projects';
+import { projects, sideProjects } from '../../data/projects';
 
 export default () => (
   <Layout>
@@ -15,6 +15,15 @@ export default () => (
       </PageHeader>
       <div>
         {projects.map(project => (
+          <ProjectCard {...project} key={project.title} />
+        ))}
+      </div>
+      <PageHeader>
+        <PageHeaderTitle>Side Projects</PageHeaderTitle>
+        <div>Some of my side projects that I have worked on my freetime.</div>
+      </PageHeader>
+      <div>
+        {sideProjects.map(project => (
           <ProjectCard {...project} key={project.title} />
         ))}
       </div>

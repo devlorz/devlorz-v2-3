@@ -26,8 +26,24 @@ const ProjectDescription = styled('p')`
   ${tw`my-0 text-justify flex-grow`};
 `;
 
-const ProjectCardFooter = styled('p')`
-  ${tw`flex self-end justify-end w-full mt-0 mb-2`};
+const ProjectCardFooter = styled('div')`
+  ${tw`flex self-end w-full mt-0 mb-2`};
+`;
+
+const TechIcons = styled('div')`
+  ${tw``};
+`;
+
+const Space = styled('div')`
+  ${tw`flex-grow`};
+`;
+
+const LinkIcons = styled('div')`
+  ${tw``};
+`;
+
+const techIconStyle = css`
+  margin-right: 5px;
 `;
 
 const iconStyle = css`
@@ -35,7 +51,7 @@ const iconStyle = css`
   color: #3d4852;
 `;
 
-export default ({ img, title, desc, link }) => (
+export default ({ img, title, desc, link, github, techIcons }) => (
   <ProjectCard>
     <ProjectCardImg>
       <a href={link} target="_blank" rel="noopener noreferrer">
@@ -46,8 +62,19 @@ export default ({ img, title, desc, link }) => (
       <ProjectTitle>{title}</ProjectTitle>
       <ProjectDescription>{desc}</ProjectDescription>
       <ProjectCardFooter>
-        <Icon icon={faGithub} iconStyle={iconStyle} />
-        <Icon link={link} icon={faGlobeAsia} iconStyle={iconStyle} />
+        <TechIcons>
+          {techIcons &&
+            techIcons.map(({ iconImg, name }) => (
+              <img src={iconImg} alt={name} key={name} class={techIconStyle} />
+            ))}
+        </TechIcons>
+        <Space />
+        <LinkIcons>
+          {github && (
+            <Icon link={github} icon={faGithub} iconStyle={iconStyle} />
+          )}
+          <Icon link={link} icon={faGlobeAsia} iconStyle={iconStyle} />
+        </LinkIcons>
       </ProjectCardFooter>
     </ProjectCardMain>
   </ProjectCard>
