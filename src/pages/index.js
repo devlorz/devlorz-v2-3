@@ -25,7 +25,10 @@ const Wrapper = styled('div')`
 `;
 
 const IconList = styled('div')`
-  ${tw`m-4`};
+  display: flex;
+  margin: 1rem;
+  height: 42px;
+  width: 260px;
 `;
 
 const TextWrap = styled('div')`
