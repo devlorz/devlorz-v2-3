@@ -5,7 +5,7 @@ import Icon from './Icon';
 const iconStyle = css`
   margin: 5px 10px;
   color: #3d4852;
-  width: 32px;
+  width: 32px !important;
   height: 32px;
 `;
 
