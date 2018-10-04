@@ -65,7 +65,12 @@ export default ({ img, title, desc, link, github, techIcons }) => (
         <TechIcons>
           {techIcons &&
             techIcons.map(({ iconImg, name }) => (
-              <img src={iconImg} alt={name} key={name} class={techIconStyle} />
+              <img
+                src={iconImg}
+                alt={name}
+                key={name}
+                className={techIconStyle}
+              />
             ))}
         </TechIcons>
         <Space />

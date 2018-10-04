@@ -3,6 +3,7 @@ import carChannelIcon from '../assets/project-icon/carchannel.png';
 import carBellIcon from '../assets/project-icon/carbell.png';
 import carstamateIcon from '../assets/project-icon/carstamate.jpg';
 import ngPokedexIcon from '../assets/project-icon/ng-pokedex.png';
+import ngCart from '../assets/project-icon/ng_cart.png';
 
 import angular from '../assets/tech-icon/angular.png';
 import ngrx from '../assets/tech-icon/ngrx.png';
@@ -12,6 +13,7 @@ import angularMaterial from '../assets/tech-icon/ng-material.png';
 import angularPWA from '../assets/tech-icon/ng-pwa.png';
 import jest from '../assets/tech-icon/jest.png';
 import storybook from '../assets/tech-icon/storybook.png';
+import firebase from '../assets/tech-icon/firebase.png';
 
 export const projects = [
   {
@@ -69,6 +71,31 @@ export const projects = [
 ];
 
 export const sideProjects = [
+  {
+    img: ngCart,
+    title: 'Simple Shopping Cart',
+    desc: 'Simple Shopping Cart Web App built by Angular & Firebase',
+    link: 'https://simple-shopping-cart.firebaseapp.com/',
+    github: 'https://github.com/devlorz/ng-shopping-cart',
+    techIcons: [
+      {
+        name: 'angular',
+        iconImg: angular
+      },
+      {
+        name: 'angular-material',
+        iconImg: angularMaterial
+      },
+      {
+        name: 'ngrx',
+        iconImg: ngrx
+      },
+      {
+        name: 'firebase',
+        iconImg: firebase
+      }
+    ]
+  },
   {
     img: ngPokedexIcon,
     title: 'NG-POKEDEX',
