@@ -19,7 +19,8 @@ export const projects = [
   {
     img: carChannelIcon,
     title: 'Car Channel BtoB',
-    desc: 'Japanese B2B Car Trading & Management System built by Angular, NGRX',
+    desc:
+      'Japanese B2B Car Trading & Management System, is part of Extreme Cloud Project built by Angular. The complex app state is managed by NGRX.',
     link: 'http://104.198.85.214:8089/home',
     techIcons: [
       {
@@ -43,7 +44,8 @@ export const projects = [
   {
     img: carBellIcon,
     title: 'Kurumajiten Car Bell',
-    desc: 'Japanese Car Trading & Management System built by Angular, NGRX',
+    desc:
+      'Japanese Car Trading & Management System, is part of Extreme Cloud Project built by Angular. The complex app state is managed by NGRX.',
     link: 'https://kurumajiten.firebaseapp.com/',
     techIcons: [
       {
@@ -59,7 +61,8 @@ export const projects = [
   {
     img: carstamateIcon,
     title: 'Carstamate',
-    desc: 'Japanese Car Trading & Management System built by Angular',
+    desc:
+      'Japanese Car Trading & Management System, is part of Extreme Cloud Project built by Angular',
     link: 'https://carsta.cloud/',
     techIcons: [
       {
@@ -74,7 +77,8 @@ export const sideProjects = [
   {
     img: ngCart,
     title: 'Simple Shopping Cart',
-    desc: 'Simple Shopping Cart Web App built by Angular & Firebase',
+    desc:
+      'Simple Shopping Cart Web App built by Angular. App states is managed by NGRX(store, effect and entity). Backend data is managed by Firebase. The app is PWA for native mobile app feeling.',
     link: 'https://simple-shopping-cart.firebaseapp.com/',
     github: 'https://github.com/devlorz/ng-shopping-cart',
     techIcons: [
@@ -83,12 +87,16 @@ export const sideProjects = [
         iconImg: angular
       },
       {
+        name: 'ngrx',
+        iconImg: ngrx
+      },
+      {
         name: 'angular-material',
         iconImg: angularMaterial
       },
       {
-        name: 'ngrx',
-        iconImg: ngrx
+        name: 'angular-pwa',
+        iconImg: angularPWA
       },
       {
         name: 'firebase',
@@ -99,7 +107,8 @@ export const sideProjects = [
   {
     img: ngPokedexIcon,
     title: 'NG-POKEDEX',
-    desc: 'Simple Pokedex Progressive Web App built by Angular',
+    desc:
+      'Simple Pokedex Progressive Web App built by Angular and Angular Material. This App use Service Worker for caching so offline mode is supported.',
     link: 'https://ng-pokedex-f8bf4.firebaseapp.com/',
     github: 'https://github.com/devlorz/ng6-pokedex',
     techIcons: [
@@ -129,7 +138,7 @@ export const sideProjects = [
     img: moneySimpleIcon,
     title: 'Money Simple',
     desc:
-      'A simple android money management app that help you track income and outcome transactions with monthly overview.',
+      'A simple android money management app that help you track income and outcome transactions with monthly overview. Some parts of the app is written by Kotlin.',
     link:
       'https://play.google.com/store/apps/details?id=com.leeway.moneysimple',
     techIcons: [

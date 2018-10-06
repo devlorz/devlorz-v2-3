@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Icon from '../components/Icon';
 
 const ProjectCard = styled('div')`
-  ${tw`flex flex-col items-center mt-0 mx-5p mb-10p md:flex-row md:mx-15p md:mb-5p`};
+  ${tw`flex flex-col items-center mt-0 mx-5p mb-10p md:flex-row md:mx-15p md:mb-5p md:justify-center`};
 `;
 
 const ProjectCardImg = styled('div')`
@@ -15,15 +15,15 @@ const ProjectCardImg = styled('div')`
 `;
 
 const ProjectCardMain = styled('div')`
-  ${tw`flex flex-col justify-start items-center pl-0 md:items-start md:pl-12 md:w-3/5 h-180px text-grey-darkest`};
+  ${tw`flex flex-col justify-start items-center pl-0 md:items-start md:pl-12 md:w-3/5 min-h-180px text-grey-darkest`};
 `;
 
 const ProjectTitle = styled('span')`
-  ${tw`text-2xl text-teal font-medium md:mt-4`};
+  ${tw`text-2xl text-teal font-medium mb-4 md:mt-4`};
 `;
 
 const ProjectDescription = styled('p')`
-  ${tw`my-0 text-justify flex-grow`};
+  ${tw`my-0 text-justify flex-grow mb-4`};
 `;
 
 const ProjectCardFooter = styled('div')`
