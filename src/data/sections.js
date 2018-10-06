@@ -10,7 +10,7 @@ export const sections = [
         bodyTitle: 'Front End Team Lead',
         bodyDetails: [
           'Coordinate with Japanese developers and Thai developers for smooth workflow',
-          'Built new web application projects called Extreme Cloud implemented by Angular'
+          'Built new web application project called Extreme Cloud implemented by Angular'
         ]
       },
       {
@@ -52,19 +52,25 @@ export const sections = [
         title: 'Car Channel BtoB',
         subTitle: 'Angular 6, NGRX',
         info: 'May 2018 - Present',
-        bodyDetails: ['Japanese B2B Car Trading & Management System']
+        bodyDetails: [
+          'Japanese B2B Car Trading & Management System, is part of Extreme Cloud project'
+        ]
       },
       {
         title: 'Kurumajiten Car Bell',
         subTitle: 'Angular 4, NGRX',
         info: 'June 2017 – August 2018',
-        bodyDetails: ['Japanese Car Trading & Management System']
+        bodyDetails: [
+          'Japanese Car Trading & Management System, is part of Extreme Cloud project'
+        ]
       },
       {
         title: 'Carstamate',
         subTitle: 'Angular 2',
         info: 'January 2017 – January 2018',
-        bodyDetails: ['Japanese Car Trading & Management System']
+        bodyDetails: [
+          'Japanese Car Trading & Management System, is part of Extreme Cloud project'
+        ]
       }
     ]
   },
@@ -72,6 +78,21 @@ export const sections = [
     id: 3,
     title: 'Side Projects',
     subSections: [
+      {
+        title: 'Simple Shopping Cart',
+        subTitle: 'Angular, NGRX, Firebase',
+        info: 'September 2018 - Present',
+        bodyDetails: ['A simple shopping cart Progressive Web App']
+      },
+      {
+        title: 'NG-POKEDEX',
+        subTitle: 'Angular',
+        info: 'June 2018 - Present',
+        bodyDetails: [
+          'A simple pokedex Progressive Web App',
+          'Offline supported'
+        ]
+      },
       {
         title: 'Money Simple',
         subTitle: 'Android, Java, Kotlin',
@@ -101,9 +122,18 @@ export const sections = [
     subSections: [
       {
         bodyDetails: [
-          'TypeScript, JavaScript(ES6), Angular, React, RxJS, NGRX, Redux, Git',
+          'TypeScript, JavaScript, Angular, React, RxJS, NGRX, Redux, Git',
           'Java, Kotlin, C#, VB.net, Android, Firebase'
         ]
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: 'Languages',
+    subSections: [
+      {
+        bodyDetails: ['Thai (Native), Japanese (N1), English']
       }
     ]
   }
