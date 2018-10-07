@@ -78,7 +78,7 @@ export const sideProjects = [
     img: ngCart,
     title: 'Simple Shopping Cart',
     desc:
-      'Simple Shopping Cart Web App built by Angular. App states are managed by NGRX(store, effect and entity). Backend data is managed by Firebase. The app is PWA for native mobile app feeling.',
+      'Simple Shopping Cart Web App built by Angular. App states are managed by NGRX(store, effect and entity). Backend data and authentication are managed by Firebase. The app is PWA for native mobile app feeling.',
     link: 'https://simple-shopping-cart.firebaseapp.com/',
     github: 'https://github.com/devlorz/ng-shopping-cart',
     techIcons: [

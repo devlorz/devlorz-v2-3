@@ -50,7 +50,7 @@ export const sections = [
     subSections: [
       {
         title: 'Car Channel BtoB',
-        subTitle: 'Angular 6, NGRX',
+        subTitle: 'Angular, NGRX',
         info: 'May 2018 - Present',
         bodyDetails: [
           'Japanese B2B Car Trading & Management System, is part of Extreme Cloud project'
@@ -58,7 +58,7 @@ export const sections = [
       },
       {
         title: 'Kurumajiten Car Bell',
-        subTitle: 'Angular 4, NGRX',
+        subTitle: 'Angular, NGRX',
         info: 'June 2017 – August 2018',
         bodyDetails: [
           'Japanese Car Trading & Management System, is part of Extreme Cloud project'
@@ -66,7 +66,7 @@ export const sections = [
       },
       {
         title: 'Carstamate',
-        subTitle: 'Angular 2',
+        subTitle: 'Angular',
         info: 'January 2017 – January 2018',
         bodyDetails: [
           'Japanese Car Trading & Management System, is part of Extreme Cloud project'
@@ -81,13 +81,16 @@ export const sections = [
       {
         title: 'Simple Shopping Cart',
         subTitle: 'Angular, NGRX, Firebase',
-        info: 'September 2018 - Present',
-        bodyDetails: ['A simple shopping cart Progressive Web App']
+        // info: 'September 2018 - October 2018',
+        bodyDetails: [
+          'A simple shopping cart Progressive Web App',
+          'Manage backend data and authentication by Firebase'
+        ]
       },
       {
         title: 'NG-POKEDEX',
         subTitle: 'Angular',
-        info: 'June 2018 - Present',
+        // info: 'June 2018 - October 2018',
         bodyDetails: [
           'A simple pokedex Progressive Web App',
           'Offline supported'
@@ -96,7 +99,7 @@ export const sections = [
       {
         title: 'Money Simple',
         subTitle: 'Android, Java, Kotlin',
-        info: 'February 2017 – September 2017',
+        // info: 'February 2017 – September 2017',
         bodyDetails: [
           'A simple money management Android application',
           'Track income and outcome transactions with monthly overview'
@@ -112,7 +115,7 @@ export const sections = [
         title: 'Ramkhamhaeng University',
         subTitle: 'Bangkok, Thailand',
         info: 'Graduation: 2013',
-        bodyDetails: ['Bachelor of Science (B.S.), Computer Science']
+        bodyDetails: ['Bachelor of Science (B.S.), Computer Science, 3.71']
       }
     ]
   },

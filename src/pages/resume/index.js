@@ -7,6 +7,15 @@ import { Container, Avatar } from '../../components/Style';
 import SectionCom from '../../components/Section';
 import { sections } from '../../data/sections';
 import profilePic from '../../assets/profile_resume.jpg';
+import resume from '../../assets/nutti_saelor_resume.pdf';
+
+const ButtonRow = styled('div')`
+  ${tw`flex justify-end`};
+`;
+
+const Button = styled('a')`
+  ${tw`bg-teal hover:bg-teal-dark text-white font-bold py-2 px-4 rounded no-underline`};
+`;
 
 const Header = styled('header')`
   ${tw`flex flex-col md:flex-row mb-2 md:mb-4`};
@@ -35,6 +44,9 @@ const PersonalInfo = styled('div')`
 export default () => (
   <Layout>
     <Container>
+      <ButtonRow>
+        <Button href={resume}>As PDF</Button>
+      </ButtonRow>
       <Header>
         <PicSection>
           <Avatar src={profilePic} alt="Nutti Saelor" />
@@ -43,8 +55,9 @@ export default () => (
           <Title>Nutti Saelor</Title>
           <SubTitle>Frontend Developer</SubTitle>
           <Link href="http://devlorz.github.io">devlorz.github.io</Link>
-          <Link href="mailto:nuttisaelor@gmail.com">nuttisaelor@gmail.com</Link>
           <Link href="https://github.com/devlorz">github.com/devlorz</Link>
+          <Link href="https://medium.com/@leelorz6">medium.com/@leelorz6z</Link>
+          <Link href="mailto:nuttisaelor@gmail.com">nuttisaelor@gmail.com</Link>
         </PersonalInfo>
       </Header>
 
