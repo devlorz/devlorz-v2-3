@@ -1,10 +1,13 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# devlorz.github.io (V2)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+![alt text](https://github.com/devlorz/devlorz-v2-3/blob/master/src/assets/icon.png "Devlorz")
 
-## Running in development
-`gatsby develop`
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&category=PWA)](https://github.com/ebidel/lighthouse-badge)
+
+Demo https://devlorz.github.io/
+
+## Built By
+- [Gatsby 2](https://github.com/gatsbyjs/gatsby)
+- [Tailwind](https://github.com/tailwindcss/tailwindcss)
+- [Emotion](https://github.com/emotion-js/emotion)
+- [React Images](https://github.com/jossmac/react-images)
