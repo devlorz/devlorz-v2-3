@@ -32,7 +32,7 @@ export default ({
         </div>
       </PageHeader>
       {edges.map(({ node }) => (
-        <ArticleCard node={node} key={node.id}/>
+        <ArticleCard node={node} key={node.id} />
       ))}
     </Article>
   </Layout>
@@ -40,7 +40,7 @@ export default ({
 
 export const pageQuery = graphql`
   query {
-    allMediumPost(sort: { fields: [latestPublishedAt], order: DESC }) {
+    allMediumPost(sort: { fields: [firstPublishedAt], order: DESC }) {
       edges {
         node {
           id
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
             }
           }
           createdAt
-          latestPublishedAt
+          firstPublishedAt
           author {
             name
           }

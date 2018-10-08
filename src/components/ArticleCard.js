@@ -54,7 +54,7 @@ export default ({ node }) => {
         <br />
         <small>
           <FontAwesomeIcon className={iconStyle} icon={faCalendarAlt} />{' '}
-          {node.latestPublishedAt}{' '}
+          {node.firstPublishedAt}{' '}
           <FontAwesomeIcon className={iconStyle} icon={faUser} />{' '}
           {node.author.name}
         </small>
