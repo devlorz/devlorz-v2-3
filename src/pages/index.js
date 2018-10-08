@@ -20,8 +20,8 @@ import profilePic from '../assets/profile.jpg';
 import MainIcon from '../components/MainIcon';
 import { Avatar } from '../components/Style';
 
-const Wrapper = styled('div')`
-  ${tw`flex flex-grow flex-col justify-center items-center font-sans`};
+const Content = styled('div')`
+  ${tw`flex flex-grow flex-col justify-center items-center font-sans min-h-400px`};
 `;
 
 const IconList = styled('div')`
@@ -46,7 +46,7 @@ const textStyle = css`
 
 export default () => (
   <Layout>
-    <Wrapper>
+    <Content>
       <Avatar src={profilePic} alt="Nutti Saelor" />
       <TextWrap>
         <Text>Hello, my name is Nutti Saelor 👓.</Text>
@@ -76,6 +76,6 @@ export default () => (
           icon={faEnvelopeSquare}
         />
       </IconList>
-    </Wrapper>
+    </Content>
   </Layout>
 );

@@ -12,7 +12,7 @@ const PageLayout = styled('div')`
 `;
 
 const Page = styled('div')`
-  ${tw`h-full flex flex-col flex-grow`};
+  ${tw`h-full flex flex-col flex-grow overflow-y-scroll`};
 `;
 
 export default ({ children }) => (
