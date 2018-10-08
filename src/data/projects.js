@@ -15,8 +15,36 @@ import jest from '../assets/tech-icon/jest.png';
 import storybook from '../assets/tech-icon/storybook.png';
 import firebase from '../assets/tech-icon/firebase.png';
 
-import sample from '../assets/project-screenshot/carstamate/carstamate1.png';
-import sample2 from '../assets/project-screenshot/carstamate/carstamate1.png';
+// Screenshots
+
+import carchannel_ss_1 from '../assets/project-screenshot/carchannel/1.png';
+import carchannel_ss_2 from '../assets/project-screenshot/carchannel/2.png';
+import carchannel_ss_3 from '../assets/project-screenshot/carchannel/3.png';
+import carchannel_ss_4 from '../assets/project-screenshot/carchannel/4.png';
+
+import kurumajiten_ss_1 from '../assets/project-screenshot/kurumajiten/1.png';
+import kurumajiten_ss_2 from '../assets/project-screenshot/kurumajiten/2.png';
+import kurumajiten_ss_3 from '../assets/project-screenshot/kurumajiten/3.png';
+import kurumajiten_ss_4 from '../assets/project-screenshot/kurumajiten/4.png';
+import kurumajiten_ss_5 from '../assets/project-screenshot/kurumajiten/5.png';
+
+import carsta_ss_1 from '../assets/project-screenshot/carstamate/1.png';
+import carsta_ss_2 from '../assets/project-screenshot/carstamate/2.png';
+import carsta_ss_3 from '../assets/project-screenshot/carstamate/3.png';
+import carsta_ss_4 from '../assets/project-screenshot/carstamate/4.png';
+
+import shopping_ss_1 from '../assets/project-screenshot/simple-shopping/1.png';
+import shopping_ss_2 from '../assets/project-screenshot/simple-shopping/2.png';
+import shopping_ss_3 from '../assets/project-screenshot/simple-shopping/3.png';
+import shopping_ss_4 from '../assets/project-screenshot/simple-shopping/4.png';
+
+import pokedex_ss_1 from '../assets/project-screenshot/ng-pokedex/1.png';
+import pokedex_ss_2 from '../assets/project-screenshot/ng-pokedex/2.png';
+
+import money_ss_1 from '../assets/project-screenshot/money-simple/1.png';
+import money_ss_2 from '../assets/project-screenshot/money-simple/2.png';
+import money_ss_3 from '../assets/project-screenshot/money-simple/3.png';
+import money_ss_4 from '../assets/project-screenshot/money-simple/4.png';
 
 export const projects = [
   {
@@ -43,7 +71,12 @@ export const projects = [
         iconImg: storybook
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [
+      { src: carchannel_ss_1 },
+      { src: carchannel_ss_2 },
+      { src: carchannel_ss_3 },
+      { src: carchannel_ss_4 }
+    ]
   },
   {
     img: carBellIcon,
@@ -61,7 +94,13 @@ export const projects = [
         iconImg: ngrx
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [
+      { src: kurumajiten_ss_1 },
+      { src: kurumajiten_ss_2 },
+      { src: kurumajiten_ss_3 },
+      { src: kurumajiten_ss_4 },
+      { src: kurumajiten_ss_5 }
+    ]
   },
   {
     img: carstamateIcon,
@@ -75,7 +114,12 @@ export const projects = [
         iconImg: angular
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [
+      { src: carsta_ss_1 },
+      { src: carsta_ss_2 },
+      { src: carsta_ss_3 },
+      { src: carsta_ss_4 }
+    ]
   }
 ];
 
@@ -109,7 +153,12 @@ export const sideProjects = [
         iconImg: firebase
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [
+      { src: shopping_ss_1 },
+      { src: shopping_ss_2 },
+      { src: shopping_ss_3 },
+      { src: shopping_ss_4 }
+    ]
   },
   {
     img: ngPokedexIcon,
@@ -140,7 +189,7 @@ export const sideProjects = [
         iconImg: storybook
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [{ src: pokedex_ss_1 }, { src: pokedex_ss_2 }]
   },
   {
     img: moneySimpleIcon,
@@ -159,6 +208,11 @@ export const sideProjects = [
         iconImg: kotlin
       }
     ],
-    screenshots: [{ src: sample }, { src: sample2 }]
+    screenshots: [
+      { src: money_ss_1 },
+      { src: money_ss_2 },
+      { src: money_ss_3 },
+      { src: money_ss_4 }
+    ]
   }
 ];

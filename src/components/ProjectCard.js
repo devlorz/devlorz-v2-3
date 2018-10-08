@@ -52,6 +52,10 @@ const iconStyle = css`
   color: #3d4852;
 `;
 
+const pointer = css`
+  cursor: pointer;
+`;
+
 export class ProjectCard extends React.Component {
   constructor(props) {
     super(props);
@@ -95,11 +99,18 @@ export class ProjectCard extends React.Component {
         <Card>
           <ProjectCardImg>
             {/*<a href={link} target="_blank" rel="noopener noreferrer"> */}
-            <img src={img} alt={title} onClick={this.openLightbox} />
+            <img
+              src={img}
+              alt={title}
+              onClick={this.openLightbox}
+              className={pointer}
+            />
             {/*</a>*/}
           </ProjectCardImg>
           <ProjectCardMain>
-            <ProjectTitle>{title}</ProjectTitle>
+            <ProjectTitle onClick={this.openLightbox} className={pointer}>
+              {title}
+            </ProjectTitle>
             <ProjectDescription>{desc}</ProjectDescription>
             <ProjectCardFooter>
               <TechIcons>
