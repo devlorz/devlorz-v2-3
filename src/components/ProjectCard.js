@@ -1,12 +1,13 @@
 /* global tw */
 import React from 'react';
 import styled, { css } from 'react-emotion';
+import Lightbox from 'react-images';
 
 import { faGlobeAsia } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Icon from '../components/Icon';
 
-const ProjectCard = styled('div')`
+const Card = styled('div')`
   ${tw`flex flex-col items-center mt-0 mx-5p mb-10p md:flex-row md:mx-15p md:mb-5p md:justify-center`};
 `;
 
@@ -51,36 +52,78 @@ const iconStyle = css`
   color: #3d4852;
 `;
 
-export default ({ img, title, desc, link, github, techIcons }) => (
-  <ProjectCard>
-    <ProjectCardImg>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={img} alt={title} />
-      </a>
-    </ProjectCardImg>
-    <ProjectCardMain>
-      <ProjectTitle>{title}</ProjectTitle>
-      <ProjectDescription>{desc}</ProjectDescription>
-      <ProjectCardFooter>
-        <TechIcons>
-          {techIcons &&
-            techIcons.map(({ iconImg, name }) => (
-              <img
-                src={iconImg}
-                alt={name}
-                key={name}
-                className={techIconStyle}
-              />
-            ))}
-        </TechIcons>
-        <Space />
-        <LinkIcons>
-          {github && (
-            <Icon link={github} icon={faGithub} iconStyle={iconStyle} />
-          )}
-          <Icon link={link} icon={faGlobeAsia} iconStyle={iconStyle} />
-        </LinkIcons>
-      </ProjectCardFooter>
-    </ProjectCardMain>
-  </ProjectCard>
-);
+export class ProjectCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lightboxIsOpen: false,
+      currentImage: 0
+    };
+  }
+  openLightbox = () => {
+    this.setState({ lightboxIsOpen: true });
+  };
+  closeLightbox = () => {
+    this.setState({ lightboxIsOpen: false });
+  };
+  onPrevious = () => {
+    this.setState({ currentImage: this.state.currentImage - 1 });
+  };
+  onNext = () => {
+    this.setState({ currentImage: this.state.currentImage + 1 });
+  };
+  render() {
+    const {
+      img,
+      title,
+      desc,
+      link,
+      github,
+      techIcons,
+      screenshots
+    } = this.props;
+    return (
+      <React.Fragment>
+        <Lightbox
+          currentImage={this.state.currentImage}
+          images={screenshots}
+          isOpen={this.state.lightboxIsOpen}
+          onClickNext={this.onNext}
+          onClickPrev={this.onPrevious}
+          onClose={this.closeLightbox}
+        />
+        <Card>
+          <ProjectCardImg>
+            {/*<a href={link} target="_blank" rel="noopener noreferrer"> */}
+            <img src={img} alt={title} onClick={this.openLightbox} />
+            {/*</a>*/}
+          </ProjectCardImg>
+          <ProjectCardMain>
+            <ProjectTitle>{title}</ProjectTitle>
+            <ProjectDescription>{desc}</ProjectDescription>
+            <ProjectCardFooter>
+              <TechIcons>
+                {techIcons &&
+                  techIcons.map(({ iconImg, name }) => (
+                    <img
+                      src={iconImg}
+                      alt={name}
+                      key={name}
+                      className={techIconStyle}
+                    />
+                  ))}
+              </TechIcons>
+              <Space />
+              <LinkIcons>
+                {github && (
+                  <Icon link={github} icon={faGithub} iconStyle={iconStyle} />
+                )}
+                <Icon link={link} icon={faGlobeAsia} iconStyle={iconStyle} />
+              </LinkIcons>
+            </ProjectCardFooter>
+          </ProjectCardMain>
+        </Card>
+      </React.Fragment>
+    );
+  }
+}

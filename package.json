@@ -23,6 +23,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.6",
+    "react-images": "^0.5.19",
     "tailwindcss": "^0.6.5"
   }
 }

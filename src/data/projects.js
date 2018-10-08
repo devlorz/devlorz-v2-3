@@ -15,6 +15,9 @@ import jest from '../assets/tech-icon/jest.png';
 import storybook from '../assets/tech-icon/storybook.png';
 import firebase from '../assets/tech-icon/firebase.png';
 
+import sample from '../assets/project-screenshot/carstamate/carstamate1.png';
+import sample2 from '../assets/project-screenshot/carstamate/carstamate1.png';
+
 export const projects = [
   {
     img: carChannelIcon,
@@ -39,7 +42,8 @@ export const projects = [
         name: 'storybook',
         iconImg: storybook
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   },
   {
     img: carBellIcon,
@@ -56,7 +60,8 @@ export const projects = [
         name: 'ngrx',
         iconImg: ngrx
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   },
   {
     img: carstamateIcon,
@@ -69,7 +74,8 @@ export const projects = [
         name: 'angular',
         iconImg: angular
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   }
 ];
 
@@ -102,7 +108,8 @@ export const sideProjects = [
         name: 'firebase',
         iconImg: firebase
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   },
   {
     img: ngPokedexIcon,
@@ -132,7 +139,8 @@ export const sideProjects = [
         name: 'storybook',
         iconImg: storybook
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   },
   {
     img: moneySimpleIcon,
@@ -150,6 +158,7 @@ export const sideProjects = [
         name: 'kotlin',
         iconImg: kotlin
       }
-    ]
+    ],
+    screenshots: [{ src: sample }, { src: sample2 }]
   }
 ];

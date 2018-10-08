@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../../components/Layout';
 import { Container, PageHeader, PageHeaderTitle } from '../../components/Style';
-import ProjectCard from '../../components/ProjectCard';
+import { ProjectCard } from '../../components/ProjectCard';
 
 import { projects, sideProjects } from '../../data/projects';
 
