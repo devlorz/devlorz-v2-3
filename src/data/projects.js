@@ -46,7 +46,7 @@ export const projects = [
     title: 'Kurumajiten Car Bell',
     desc:
       'Japanese Car Trading & Management System, is part of Extreme Cloud Project built by Angular. The complex app states are managed by NGRX.',
-    link: 'https://kurumajiten.firebaseapp.com/',
+    link: 'https://kurumajiten.jp/',
     techIcons: [
       {
         name: 'angular',
