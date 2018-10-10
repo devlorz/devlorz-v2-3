@@ -1,6 +1,7 @@
 /* global tw */
 import React from 'react';
 import styled, { css } from 'react-emotion';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../../components/Layout';
 import { Container, Avatar } from '../../components/Style';
@@ -43,6 +44,26 @@ const PersonalInfo = styled('div')`
 
 export default () => (
   <Layout>
+    <Helmet
+      title={'Resume'}
+      meta={[
+        {
+          name: 'description',
+          content: "Nutti Saelor's Resume"
+        },
+        {
+          name: 'keywords',
+          content:
+            'nutti, saelor, resume, experience, projects, education, skill'
+        },
+        { property: 'og:title', content: "Nutti Saelor's Resume" },
+        { property: 'og:url', content: 'http://localhost:8000/resume' },
+        {
+          property: 'og:description',
+          content: "Nutti Saelor's Resume"
+        }
+      ]}
+    />
     <Container>
       <ButtonRow>
         <Button href={resume}>As PDF</Button>

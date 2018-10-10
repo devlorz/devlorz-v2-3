@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../../components/Layout';
 import { PageHeader, PageHeaderTitle } from '../../components/Style';
@@ -23,6 +24,23 @@ export default ({
   }
 }) => (
   <Layout>
+    <Helmet
+      title={'Articles'}
+      meta={[
+        { name: 'description', content: 'Articles by Nutti Saelor' },
+        {
+          name: 'keywords',
+          content:
+            'nutti, saelor, devlorz, devnote, article, medium, angular, typescript'
+        },
+        { property: 'og:title', content: 'Articles by Nutti Saelor' },
+        { property: 'og:url', content: 'https://devlorz.github.io/article' },
+        {
+          property: 'og:description',
+          content: 'Articles by Nutti Saelor'
+        }
+      ]}
+    />
     <Article>
       <PageHeader>
         <PageHeaderTitle>Articles</PageHeaderTitle>

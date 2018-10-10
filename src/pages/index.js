@@ -14,6 +14,7 @@ import {
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 import profilePic from '../assets/profile.jpg';
@@ -46,6 +47,22 @@ const textStyle = css`
 
 export default () => (
   <Layout>
+    <Helmet
+      title={'Nutti Saelor'}
+      meta={[
+        { name: 'description', content: 'Frontend developer, Nutti Saelor' },
+        {
+          name: 'keywords',
+          content: 'nutti, saelor, portfolio, devlorz, devnote'
+        },
+        { property: 'og:title', content: 'Nutti Saelor' },
+        { property: 'og:url', content: 'http://devlorz.github.io' },
+        {
+          property: 'og:description',
+          content: 'Frontend developer, Nutti Saelor'
+        }
+      ]}
+    />
     <Content>
       <Avatar src={profilePic} alt="Nutti Saelor" />
       <TextWrap>
